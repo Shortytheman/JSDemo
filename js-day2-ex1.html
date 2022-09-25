@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=ø, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="a1" style="width: 100px;margin: 1px;">&nbsp;</div>
+    <div id="a2" style="width: 100px;margin: 1px;">&nbsp;</div>
+    <div id="a3" style="width: 100px;margin: 1px;">&nbsp;</div>
+
+    <button id="button">321v</button>
+<script>
+
+const styleHere = document.querySelectorAll("div")
+
+
+const button = document.getElementById("button")
+
+
+for (var i = 0; i < styleHere.length; i++){
+    styleHere[i].style.backgroundColor = "red"
+}
+
+button.onclick = changeColor
+
+function changeColor(){
+    styleHere[0].style.backgroundColor = "green"
+    styleHere[1].style.backgroundColor = "black"
+    styleHere[2].style.backgroundColor = "yellow"
+}
+
+</script>
+
+</body>
+</html>

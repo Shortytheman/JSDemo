@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my-div {width: 25px; height: 25px;background-color:red; margin:1px;}
+      </style>     
+</head>
+<body>
+<div id="outer">
+    <div id="a1" class="my-div" ></div>
+    <div id="a2" class="my-div" ></div>
+    <div id="a3" class="my-div" ></div>
+    <div id="a4" class="my-div" ></div>
+    <div id="a5" class="my-div" ></div>
+    <div id="a6" class="my-div" ></div>
+    <div id="a7" class="my-div" ></div>
+    <div id="a8" class="my-div" ></div>
+    <div id="a9" class="my-div" ></div>
+    <div id="a10" class="my-div" ></div>
+
+    <p id="p1">
+    </p>
+
+</div>
+    <script>
+  
+    const divs = document.getElementsByTagName("div")
+    
+    //for (var i = 0; i < divs.length; i++){
+    //divs.onclick = c => console.log("hey" + ("a" + i).id)
+    //}
+    const out = document.getElementById("outer")
+    const p1 = document.getElementById("p1")
+
+    out.onclick = c => p1.innerText = "Hey from " + c.target.id
+    </script>
+
+
+
+</body>
+</html>
